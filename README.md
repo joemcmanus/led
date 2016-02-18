@@ -24,6 +24,7 @@ Turn it on or off (0/1)
 But it is just wrapped in a script which will do this for you. 
 
 Simple use: 
+
     root@galileo:~# ./led.py 1 
     Blinking LED 1
     Using delay 10 and for 0 attempts
