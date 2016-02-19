@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # File    : led.py 
 # Author  : Joe McManus josephmc@alumni.cmu.edu
-# Version : 0.1  02/17/2016
+# Version : 0.2  02/17/2016
 # Copyright (C) 2016 Joe McManus
 #
 # This program is free software: you can redistribute it and/or modify
@@ -26,7 +26,7 @@ parser = argparse.ArgumentParser(description='Simple LED Blinker for Galileo')
 parser.add_argument('pinNumber', help="Specify the pin number, i.e. 0-13", type=int)
 parser.add_argument('--count', help="Number of times to execute, default infinity", default=0, type=int, action="store")
 parser.add_argument('--delay', help="Number of seconds to wait between readings, default 10", default=10, type=int, action="store")
-parser.add_argument('--version', action='version',version='%(prog)s 0.1')
+parser.add_argument('--version', action='version',version='%(prog)s 0.2')
 args=parser.parse_args()
 
 
@@ -45,6 +45,7 @@ while True:
 		i = i+1
 		if args.count != 0:
 			if args.count == i:
+				pin.write(args.pinNumber)
 				break
 		time.sleep(args.delay)
 
