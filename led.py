@@ -25,7 +25,7 @@ import argparse
 parser = argparse.ArgumentParser(description='Simple LED Blinker for Galileo')
 parser.add_argument('pinNumber', help="Specify the pin number, i.e. 0-13", type=int)
 parser.add_argument('--count', help="Number of times to execute, default infinity", default=0, type=int, action="store")
-parser.add_argument('--delay', help="Number of seconds to wait between readings, default 10", default=10, type=int, action="store")
+parser.add_argument('--delay', help="Number of seconds to wait between blinkings, default 10", default=10, type=int, action="store")
 parser.add_argument('--version', action='version',version='%(prog)s 0.2')
 args=parser.parse_args()
 
