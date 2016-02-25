@@ -44,3 +44,5 @@ Simple use:
       --delay DELAY  Number of seconds to wait between readings, default 10
       --version      show program's version number and exit
  
+Possible Wiring:
+![alt tag](https://raw.githubusercontent.com/joemcmanus/led/master/GalileoGen2-LED_bb.png)
